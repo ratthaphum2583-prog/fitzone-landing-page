@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>FitZone | Fitness & Wellness</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="assets/logos/fitzone-icon.png">
+        <script src="js/main.js" defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Prompt:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-logo">
+                    <a href="#home">
+                        <img class="navbar-brand" src="assets/logos/fitzone-logo.png" alt="FitZone Logo">
+                    </a>
+                </div>
+
+                <ul class="navbar-menu">
+                    <li><a href="#home" data-i18n="nav.home">หน้าหลัก</a></li>
+                    <li><a href="#services" data-i18n="nav.services">บริการ</a></li>
+                    <li><a href="#trainers" data-i18n="nav.trainers">เทรนเนอร์</a></li>
+                    <li><a href="#about" data-i18n="nav.about">เกี่ยวกับเรา</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">ติดต่อเรา</a></li>
+                </ul>
+
+                <div class="navbar-language">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-globe preview-icon"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                        <button type="button" data-lang="th">TH</button>
+                        <span class="language-divider"></span>
+                        <button type="button" data-lang="en">EN</button>
+                </div>
+
+                <div class="navbar-controls">
+                    <div class="navbar-action">
+                        <a href="#contact" class="btn-register" data-i18n="nav.join">สมัครสมาชิก</a>
+                    </div>
+                </div>
+
+                <button class="menu-toggle" type="button" aria-label="เปิดเมนู">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu preview-icon"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <div class="hero-content">
+                    <h1>
+                        <span>Stronger</span>
+                        <span>Healthier</span>
+                        <span>Happier You</span>
+                    </h1>
+                    <p data-i18n="hero.description">เริ่มต้นชีวิตที่แข็งแรงไปด้วยกันกับ FitZone</p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="hero-register">
+                            <span data-i18n="hero.join">สมัครสมาชิกเลย</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </a>
+
+                        <a href="#services" class="hero-about" data-i18n="hero.services">ดูบริการของเรา</a>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="assets/icons/member-icon.png" alt="Member Icon">
+                        </div>
+
+                        <div class="stat-info">
+                            <strong>1,200+</strong>
+                            <span data-i18n="nav.member">สมาชิก</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="assets/icons/age-icon.png" alt="Age Icon">
+                        </div>
+
+                        <div class="stat-info">
+                            <strong>15+</strong>
+                            <span data-i18n="nav.classes">คลาสออกกำลังกาย</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <img src="assets/icons/business-icon.png" alt="Business Day Icon">
+                        </div>
+
+                        <div class="stat-info">
+                            <strong data-i18n="nav.day">7 วัน</strong>
+                            <span data-i18n="nav.day-open">เปิดให้บริการ</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services">
+                <div class="services-header">
+                    <h2 data-i18n="services.title">บริการของเรา</h2>
+                    <p>WHAT WE OFFER</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/weight-training.png" alt="Weight Training Icon">
+                        </div>
+
+                        <div class="service-info">
+                            <h3 data-i18n="nav.weight">เวทเทรนนิ่ง</h3>
+                            <span>STRENGTH & POWER</span>
+                            <p data-i18n="services.weight.desc1">เสริมสร้างกล้ามเนื้อ</p>
+                            <p data-i18n="services.weight.desc2">เพิ่มความแข็งแรง</p>
+                        </div>
+
+                        <div class="service-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/yoga.png" alt="Yoga Icon">
+                        </div>
+
+                        <div class="service-info">
+                            <h3 data-i18n="nav.yoga">โยคะ</h3>
+                            <span>MIND & BODY</span>
+                            <p data-i18n="services.yoga.desc1">เพิ่มความยืดหยุ่น</p>
+                            <p data-i18n="services.yoga.desc2">ลดความเครียด</p>
+                        </div>
+
+                        <div class="service-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/group-classes.png" alt="Group Classes Icon">
+                        </div>
+
+                        <div class="service-info">
+                            <h3 data-i18n="nav.group">คลาสกลุ่ม</h3>
+                            <span>ENERGY & COMMUNITY</span>
+                            <p data-i18n="services.group.desc1">ออกกำลังกายสนุก</p>
+                            <p data-i18n="services.group.desc2">ไปพร้อมกับทีม</p>
+                        </div>
+
+                        <div class="service-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="assets/icons/nutrition.png" alt="Nutrition Coaching Icon">
+                        </div>
+
+                        <div class="service-info">
+                            <h3 data-i18n="nav.nutrition">โภชนาการ</h3>
+                            <span>HEALTHY LIFESTYLE</span>
+                            <p data-i18n="services.nutrition.desc1">วางแผนโภชนาการ</p>
+                            <p data-i18n="services.nutrition.desc2">เพื่อสุขภาพที่ดี</p>
+                        </div>
+
+                        <div class="service-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="about-trainers-layout">
+                <section id="about">
+                    <div class="about-content">
+                        <h2 data-i18n="about.title">เกี่ยวกับเรา</h2>
+                        <span>WHO WE ARE</span>
+                        <p data-i18n="about.description">FitZone คือศูนย์ออกกำลังกายและดูแลสุขภาพแบบครบวงจรเรามุ่งมั่นที่จะช่วยให้คุณมีสุขภาพที่แข็งแรง
+                        มีพลัง และใช้ชีวิตได้อย่างมีความสุขในระยะยาว
+                        </p>
+
+                        <ul class="about-features">
+                            <li data-i18n="about.feature1">เครื่องออกกำลังกายทันสมัย</li>
+                            <li data-i18n="about.feature2">เทรนเนอร์มืออาชีพ</li>
+                            <li data-i18n="about.feature3">บรรยากาศเป็นกันเอง</li>
+                            <li data-i18n="about.feature4">เหมาะสำหรับทุกระดับ</li>
+                        </ul>
+
+                        <a href="#contact" class="about-button">
+                            <span data-i18n="about.button">รู้จัก FitZone เพิ่มเติม</span>
+
+                            <div class="about-button-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="assets/images/gym-interior.png" alt="Gym Interior">
+                    </div>
+                </section>
+
+                <section id="trainers">
+                    <div class="trainers-header">
+                        <h2 data-i18n="trainers.title">เทรนเนอร์ของเรา</h2>
+                        <p>MEET THE TEAM</p>
+                    </div>
+
+                    <div class="trainers-grid">
+                        <div class="trainer-card">
+                            <div class="trainer-image">
+                                <img src="assets/images/trainer-01.png" alt="Trainer นาส">
+                            </div>
+
+                            <div class="trainer-info">
+                                <h3 data-i18n="trainers.coach1.name">โค้ชนาส</h3>
+                                <span>Strength & Fitness</span>
+                                <p data-i18n="trainers.coach1.experience">ประสบการณ์ 7 ปี</p>
+                            </div>
+                        </div>
+
+                        <div class="trainer-card">
+                            <div class="trainer-image">
+                                <img src="assets/images/trainer-02.png" alt="Trainer มาย">
+                            </div>
+
+                            <div class="trainer-info">
+                                <h3 data-i18n="trainers.coach2.name">โค้ชมาย</h3>
+                                <span>Yoga & Mobility</span>
+                                <p data-i18n="trainers.coach2.experience">ประสบการณ์ 5 ปี</p>
+                            </div>
+                        </div>
+
+                        <div class="trainer-card">
+                            <div class="trainer-image">
+                                <img src="assets/images/trainer-03.png" alt="Trainer ท็อป">
+                            </div>
+
+                            <div class="trainer-info">
+                                <h3 data-i18n="trainers.coach3.name">โค้ชท็อป</h3>
+                                <span>Weight Loss & Nutrition</span>
+                                <p data-i18n="trainers.coach3.experience">ประสบการณ์ 6 ปี</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section id="cta">
+                <div class="cta-container">
+                    <div class="cta-content">
+                        <h2 data-i18n="cta.title">พร้อมเริ่มต้นเส้นทางสุขภาพที่ดีกว่า?</h2>
+                        <p data-i18n="cta.description">สมัครสมาชิกวันนี้ และรับคำแนะนำจากเทรนเนอร์ของเรา</p>
+                    </div>    
+                    <a href="#contact" class="cta-button">
+                        <span data-i18n="hero.join">สมัครสมาชิกเลย</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right preview-icon"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                    </a>
+                </div>
+
+            </section>
+
+            <section id="contact">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2 data-i18n="contact.title">ติดต่อเรา</h2>
+                        <span>GET IN TOUCH</span>
+                    
+                        <div class="contact-icon-info">
+                            <svg width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true">
+                                <path d="M12 2C7.58 2 4 5.58 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4.42-3.58-8-8-8Z"
+                                fill="#D477FF"/>
+                                <circle cx="12" cy="10" r="3" fill="#0b1020"/>
+                            </svg>
+                        
+                            <p><span data-i18n="contact.address">123 ถนนสุขภาพดี ต.ท่าช้าง อ.เมือง จ.สมุทร 86000</span></p>
+                        </div>
+
+                        <div class="contact-icon-info">
+                            <svg width="24" height="24" viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true">
+                                <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.32.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2Z"
+                                fill="#D477FF"/>
+                            </svg>
+
+                            <p>077-123-456</p>
+                        </div>
+
+                        <div class="contact-icon-info">
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true"
+                                >
+                                <rect
+                                x="2"
+                                y="4"
+                                width="20"
+                                height="16"
+                                rx="2.5"
+                                fill="#D477FF"
+                                />
+                                <path
+                                d="M3 6L12 13L21 6"
+                                stroke="#0b1020"
+                                stroke-width="1.6"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                />
+                            </svg>
+
+                            <p>contact@fitzone.co.th</p>
+                        </div>
+
+                        <div class="contact-logo">
+                            <a href="https://www.facebook.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Facebook">
+                                <img src="assets/icons/facebook.svg"
+                                    alt=""
+                                    width="28"
+                                    height="28">
+                            </a>
+
+                            <a href="https://www.instagram.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Instagram">
+                                <img src="assets/icons/instagram.svg"
+                                    alt=""
+                                    width="28"
+                                    height="28">
+                            </a>
+
+                            <a href="https://www.line.me/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Line">
+                                <img src="assets/icons/line.svg"
+                                    alt=""
+                                    width="28"
+                                    height="28">
+                            </a>
+
+                            <a href="https://www.youtube.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="YouTube">
+                                <img src="assets/icons/youtube.svg"
+                                    alt=""
+                                    width="28"
+                                    height="28">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3 data-i18n="nav.head-contact">ส่งข้อความถึงเรา</h3>
+                        <form id="contact-form">
+                            <div class="form-group required-field">
+                                <input type="text" id="contact-name" name="name" placeholder="ชื่อ-นามสกุล" aria-label="ชื่อ-นามสกุล" data-i18n-placeholder="contact.name" required>
+                            </div>
+
+                            <div class="form-group required-field">
+                                <input type="email" id="contact-email" name="email" placeholder="อีเมล" aria-label="อีเมล" data-i18n-placeholder="contact.email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" id="contact-tel" name="phone" placeholder="เบอร์โทรศัพท์" data-i18n-placeholder="contact.phone" aria-label="เบอร์โทรศัพท์">
+                            </div>
+
+                            <div class="form-group">
+                                <select id="contact-subject" name="subject">
+                                    <option value="" data-i18n="nav.select">เรื่องที่สนใจ</option>
+                                    <option value="membership" data-i18n="nav.join">สมัครสมาชิก</option>
+                                    <option value="training" data-i18n="nav.training">เทรนเนอร์ส่วนตัว</option>
+                                    <option value="classes" data-i18n="nav.classes">คลาสออกกำลังกาย</option>
+                                    <option value="other" data-i18n="nav.other">อื่น ๆ</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group required-field">
+                                <textarea id="contact-message" name="message" rows="4" placeholder="ข้อความของคุณ" aria-label="ข้อความของคุณ" data-i18n-placeholder="contact.message" required></textarea>
+                            </div>
+
+                            <button type="submit" class="contact-submit">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="#ffffff"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                    >
+                                    <path d="M22 2 11 13"/>
+                                    <path d="m22 2-7 20-4-9-9-4Z"/>
+                                    </svg>
+                                <span data-i18n="nav.submit">ส่งข้อความ</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-map">
+                        <div class="map-wrapper">
+                            <img src="assets/images/fitzone-map.png" 
+                                alt="แผนที่แสดงตำแหน่ง FitZone"
+                                class="map-image">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-brand">
+                    <img src="assets/logos/fitzone-logo.png" alt="FitZone Logo">
+                    <p>&copy; 2026 FitZone. All Rights Reserved.</p>
+                </div>
+
+                <div class="footer-menu">
+                    <h2 data-i18n="nav.menu">เมนูเว็บไซต์</h2>
+                    <ul>
+                       <li><a href="#home" data-i18n="nav.home">หน้าหลัก</a></li> 
+                       <li><a href="#services" data-i18n="nav.services">บริการ</a></li> 
+                       <li><a href="#trainers" data-i18n="nav.trainers">เทรนเนอร์</a></li> 
+                       <li><a href="#about" data-i18n="nav.about">เกี่ยวกับเรา</a></li> 
+                       <li><a href="#contact" data-i18n="nav.contact">ติดต่อเรา</a></li> 
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h2 data-i18n="nav.our-services">บริการของเรา</h2>
+                    <p data-i18n="nav.weight">เวทเทรนนิ่ง</p>
+                    <p data-i18n="nav.yoga">โยคะ</p>
+                    <p data-i18n="nav.group">คลาสกลุ่ม</p>
+                    <p data-i18n="nav.nutrition">โภชนาการ</p>
+                </div>
+
+                <div class="footer-social">
+                    <h2 data-i18n="footer.follow">ติดตามเรา</h2>
+                    
+                    <a href="https://www.facebook.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook">
+                        <img src="assets/icons/dark-facebook.svg"
+                            alt=""
+                            width="24"
+                            height="24">
+                    </a>
+
+                    <a href="https://www.instagram.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram">
+                        <img src="assets/icons/dark-instagram.svg"
+                            alt=""
+                            width="24"
+                            height="24">
+                    </a>
+
+                    <a href="https://www.line.me/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Line">
+                        <img src="assets/icons/dark-line.svg"
+                            alt=""
+                            width="24"
+                            height="24">
+                    </a>
+
+                    <a href="https://www.youtube.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="YouTube">
+                        <img src="assets/icons/dark-youtube.svg"
+                            alt=""
+                            width="24"
+                            height="24">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
